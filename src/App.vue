@@ -24,6 +24,10 @@ const removeTodoById = (uid:string):void =>{
     return todo.id !== uid
   })
 }
+
+console.log(1)
+//此处一万行
+
 onMounted(()=>{
   const objectSet:ITodo[] = JSON.parse(localStorage.getItem("todoList")||"[]")
   userTodoListRef.value = objectSet
